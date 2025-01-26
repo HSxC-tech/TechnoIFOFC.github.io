@@ -1,0 +1,127 @@
+/* stylepaginateste.css */
+
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte principal */
+body {
+    font-family: 'Roboto', sans-serif;
+    
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container principal */
+#container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo da seção de boas-vindas */
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-section h2 {
+    font-size: 36px;
+    color: #EAEAEA;
+}
+
+.welcome-section h3 {
+    font-size: 24px;
+    color: #EAEAEA;
+    margin-top: 10px;
+}
+
+/* Estilo das seções de conceito */
+.concepts-section h1 {
+    font-size: 32px;
+    color: #EAEAEA;
+    margin-bottom: 20px;
+}
+
+.concepts-section article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.concepts-section article h2 {
+    font-size: 28px;
+    color: #3B82F6;
+    margin-bottom: 10px;
+}
+
+.concepts-section article p,
+.concepts-section article ul, 
+.concepts-section article li,
+.concepts-section article strong {
+    font-size: 18px;
+    color: #34495e;
+}
+
+.concepts-section article ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Estilo de código */
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 4px;
+    color: #FF5722;
+}
+
+/* Separador horizontal */
+hr {
+    border: 1px solid #3B82F6;
+    margin: 30px 0;
+}
+
+/* Links */
+a {
+    color: #3B82F6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustando layout para telas pequenas */
+@media (max-width: 768px) {
+    .welcome-section h2 {
+        font-size: 28px;
+    }
+
+    .welcome-section h3 {
+        font-size: 20px;
+    }
+
+    .concepts-section h1 {
+        font-size: 28px;
+    }
+
+    .concepts-section article {
+        padding: 15px;
+    }
+
+    .concepts-section article h2 {
+        font-size: 24px;
+    }
+
+    .concepts-section article p,
+    .concepts-section article ul {
+        font-size: 16px;
+    }
+}

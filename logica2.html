@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoIF - Home</title>
+    <link rel="stylesheet" href="CSS/styleheader.css">
+    <link rel="stylesheet" href="CSS/stylemain.css">
+    <link rel="stylesheet" href="CSS/stylefooter.css">
+    <link rel="stylesheet" href="CSS/stylematerias-conteudos.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="header">
+        <div class="header-container">
+            <img src="/Header/TechnoIF-letras.png" alt="Logo TechnoIF">
+            <h1>TechnoIF</h1>
+        </div>
+        
+        <nav class="navheader">
+            <ol class="navheader-principal">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Materias.html">Matérias</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ol>
+        </nav>
+    </header>
+ <!-- Conteúdo principal -->
+ <main id="container">
+    <section class="welcome-section">
+        <h2>Bem-vindo ao Mundo da Programação 2</h2>
+        <h3>Explore os fundamentos que impulsionam a tecnologia!</h3>
+    </section>
+    <hr>
+
+    <!-- Seção de conteúdos educativos -->
+    <section class="concepts-section">
+        <h1 id="estruturas">Estruturas Fundamentais</h1>
+        <article>
+            <h2>O que são Estruturas de Controle?</h2>
+            <p>São blocos de código que determinam o fluxo de execução de um programa, permitindo decisões e repetições. Exemplos incluem:</p>
+            <ul>
+                <li><strong>If/Else:</strong> Escolhas baseadas em condições. <pre><code>if (idade >= 18) {
+console.log("Você é maior de idade.");
+} else {
+console.log("Você é menor de idade.");
+}</code></pre></li>
+                <li><strong>Switch/Case:</strong> Alternativas para múltiplas condições. <pre><code>switch(dia) {
+case 'Segunda':
+    console.log("Início da semana!");
+    break;
+default:
+    console.log("Outro dia.");
+}</code></pre></li>
+            </ul>
+        </article>
+        <hr>
+
+        <h1 id="loops">Laços de Repetição</h1>
+        <article>
+            <h2>Por que usar Laços de Repetição?</h2>
+            <p>Para automatizar tarefas repetitivas, como processar listas ou realizar cálculos em massa.</p>
+            <ul>
+                <li><strong>Enquanto-Faça:</strong> Executa enquanto a condição for verdadeira. <pre><code>let i = 0;
+while (i < 5) {
+console.log(i);
+i++;
+}</code></pre></li>
+                <li><strong>Para-Faça:</strong> Define um número fixo de repetições. <pre><code>for (let i = 0; i < 5; i++) {
+console.log(i);
+}</code></pre></li>
+                <li><strong>Faça-Enquanto:</strong> Garante execução ao menos uma vez. <pre><code>let i = 0;
+do {
+console.log(i);
+i++;
+} while (i < 5);</code></pre></li>
+            </ul>
+        </article>
+        <hr>
+
+        <h1 id="variaveis">Variáveis e Tipos de Dados</h1>
+        <article>
+            <h2>O que são Variáveis?</h2>
+            <p>Espaços na memória usados para armazenar valores que podem mudar durante a execução do programa.</p>
+            <ul>
+                <li><strong>Inteiro:</strong> Números sem casas decimais (ex.: 1, 2, 100). <pre><code>let idade = 25;</code></pre></li>
+                <li><strong>Real:</strong> Números com casas decimais (ex.: 3.14, 0.99). <pre><code>let preco = 19.99;</code></pre></li>
+                <li><strong>Texto:</strong> Cadeias de caracteres (ex.: "Olá, Mundo!"). <pre><code>let mensagem = "Bem-vindo!";</code></pre></li>
+            </ul>
+        </article>
+        <hr>
+
+        <h1 id="funcoes">Funções</h1>
+        <article>
+            <h2>O que são Funções?</h2>
+            <p>Blocos de código reutilizáveis que realizam uma tarefa específica. Podem receber parâmetros e retornar valores.</p>
+            <ul>
+                <li><strong>Função Simples:</strong> <pre><code>function saudacao(nome) {
+return `Olá, ${nome}!`;
+}
+console.log(saudacao("Maria"));</code></pre></li>
+                <li><strong>Função Anônima:</strong> <pre><code>const somar = function(a, b) {
+return a + b;
+};
+console.log(somar(5, 3));</code></pre></li>
+                <li><strong>Arrow Function:</strong> <pre><code>const multiplicar = (a, b) => a * b;
+console.log(multiplicar(4, 2));</code></pre></li>
+            </ul>
+        </article>
+    </section>
+</main>
+        <footer>
+            <div class="colunafooter">
+                <h5>Entre em contato</h5>
+            </div>
+            <div class="colunafooter">
+                <h5>@Todos os direitos reservados</h5>
+                <h5>Produzido por TechnoIF e o seu desenvolvedor lindo</h5>
+            </div>
+            <div class="colunafooter">
+                <h5>Informações</h5>
+            </div>
+            
+        </footer>

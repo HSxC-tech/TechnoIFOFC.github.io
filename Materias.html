@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/styleheader.css">
+    <link rel="stylesheet" href="CSS/stylemain.css">
+    <link rel="stylesheet" href="CSS/stylefooter.css">
+
+</head>
+<body>
+    <div id="container">
+        <header id="header"> 
+            <img src="/Header/images/Logo TechnoIF letras.png" alt="">
+            <div class="logo">
+                <h1>TechnoIF</h1>
+            </div>
+            <div class="navheader">
+                <button id="menu-toggle" class="menu-button">
+                    &#9776;
+                </button>
+                <ol class="navheader-principal">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="navheader-materiais-dropdown">
+                        <a href="materias.html">Materias</a>
+                        <ol class="materiais-dropdown-content">
+                            <li><a href="#">1º Ano</a></li>
+                            <li><a href="#">2º Ano</a></li>
+                            <li><a href="#">3º Ano</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ol>
+            </div>
+        </header>
+        <main>
+            <div class="card-principal">
+                <h2>1º Ano</h2>
+                <button id="move-left" class="move-x">
+                    <img src="main/images/Seta-branca-esquerda.png" alt="Mover para a esquerda">
+                </button>
+                <div class="cards-ano">
+                    <div class="cardsmaterias">
+                        <h3>Introdução à Informática</h3>
+                        <p>Tem o objetivo apresentar o histórico da computação, a evolução do hardware e software, e os sistemas operacionais.</p>
+                        <a href="Introducao-Innformatica.html"><button class="button">Aprenda mais</a></button>
+                    </div>
+                    <div class="cardsmaterias">
+                        <h3>Sistemas Operacionais</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel aliquet erat. Fusce arcu est, interdum at feugiat eget, sagittis et risus. Phasellus sed est sollicitudin, ultricies justo in, eleifend est.</p>
+                        <a href="Sistemas-operacionais.html"><button class="button">Aprenda mais</a></button>
+                    </div>
+                    <div class="cardsmaterias">
+                        <h3>Lógica de Programação</h3>
+                        <p>A lógica de programação organiza o raciocínio em passos lógicos e sequenciais para resolver problemas, sendo essencial na criação de algoritmos e programas.
+                        </p>
+                        <a href="Logica1.html"><button class="button">Aprenda mais</a></button>
+                    </div>
+                    <div class="cardsmaterias">
+                        <h3>Lógica de Programação 2</h3>
+                        <p>A lógica de programação2 organiza o raciocínio em passos lógicos e sequenciais para resolver problemas, sendo essencial na criação de algoritmos e programas como estruturas de decicões.</p>
+                        <a href="logica2.html"><button class="button">Aprenda mais</a></button>
+                    </div>
+                    <div class="cardsmaterias">           
+                        <h3>Redes de Computadores</h3>
+                        <p>rede de computadores é um sistema que conecta dispositivos, como computadores e smartphones, para trocar informações, compartilhar recursos e se comunicar. Elas variam em tamanho e propósito, desde redes locais (LAN) até redes globais, como a Internet</p>
+                        <a href="Redes.html"><button class="button">Aprenda mais</a></button>
+                    </div>
+
+                </div>
+                <button id="move-right" class="move-x">
+                    <img src="main/images/Seta-branca-direita.png" alt="Mover para a direita">
+                </button>
+            </div> 
+
+        </main>
+        <footer>
+            <div class="colunafooter">
+                <h5>Entre em contato</h5>
+            </div>
+            <div class="colunafooter">
+                <h5>@Todos os direitos reservados</h5>
+                <h5>Produzido por TechnoIF e o seu desenvolvedor lindo</h5>
+            </div>
+            <div class="colunafooter">
+                <h5>Informações</h5>
+            </div>
+            
+        </footer>
+    </div>
+    <script src="JS/botões.js"></script>
+</body>
+</html>

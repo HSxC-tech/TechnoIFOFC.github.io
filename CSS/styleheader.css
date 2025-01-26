@@ -1,0 +1,137 @@
+body {
+    font-family: Helvetica, "Trebuchet MS", sans-serif;
+    background-color: #12152B;
+    height: 100vh;
+}
+#header { /*!START HEADER!*/
+    border-bottom: 8px solid  #1F2937;
+    position: relative;
+    width: auto;
+    height: 80px ;
+    background-color: #12152B;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right:  20px ;
+}
+#header img {
+    display: none;
+    width: 180px;
+    float: inline-start;
+    background-color: rgba(141, 153, 174, 0);  /* Fundo semitransparente */
+    padding: 5px; /* Espaçamento ao redor da logo */
+    border-radius: 5px; /* Ajuste opcional para suavizar */
+}
+#header h1{
+    color:deepskyblue;
+    position: relative;
+    float: left;
+
+
+    padding: 0px 25px;
+    
+}
+
+.navheader{
+    float: right;
+}
+    .navheader li {
+        display: inline-block;
+        position: relative;
+        color: #fff;
+    }
+    .navheader a {
+        
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 10px 15px;
+        padding: 10px 15px;
+        transition: color 0.1s ease, transform 0.3s ease, background-color 0.3s ease;
+    }
+    .navheader a:hover{
+        color: #FF5722;
+        transform: scale(1.2);
+    }
+    .navheader-materiais-dropdown {
+        color: #fff;
+        display: inline-block;
+        position: relative; /* Adicionado para posicionar o dropdown */
+    }
+    
+    .navheader-materiais-dropdown .materiais-dropdown-content {
+        display: none;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        background-color: #182f79; 
+        min-width: 120px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        margin: 9px 0px 0px 6px;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    
+    .navheader-materiais-dropdown .materiais-dropdown-content li {
+        
+        display: block;
+        text-align: left; /* Alinha os itens do dropdown */
+    }
+    
+    .navheader-materiais-dropdown .materiais-dropdown-content a {
+        
+        color: #fff;
+        padding: 5px 10px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.5s ease; /* Transição suave no hover */
+    }
+    
+    .navheader-materiais-dropdown .materiais-dropdown-content a:hover {
+        transform: scale(1.1);
+        color: #fff; 
+    }
+    
+    .navheader-materiais-dropdown:hover .materiais-dropdown-content {
+        display: block;
+    }
+
+    .menu-button {
+        display: none;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .menu-button {
+            display: block;
+        }
+    
+        .navheader-principal {
+            display: none;
+            flex-direction: column;
+            gap: 8px;
+            background-color: #029B99;
+            position: absolute;
+            top: 60px;
+            right: 10px;
+            width: 200px;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 3;
+        }
+    
+        .navheader-principal.open {
+            display: flex;
+        }
+    
+        .navheader-principal li {
+            text-align: center;
+        }
+    }

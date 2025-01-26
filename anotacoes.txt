@@ -1,0 +1,13 @@
+
+Colors: #141414
+HEADER:
+background #12122b #029b99 
+a:hover #FF5722
+#3B82F6 
+Fundo: #12152B (mantém o fundo atual).
+Texto principal: #EAEAEA (cinza claro ou branco para legibilidade).
+Texto secundário: #8D99AE (cinza azulado para elementos menos importantes).
+Divisor do Header: #1F2937
+Dropdwon: #1c1c42
+Links ativos e detalhes: #029B99 (mantém a cor atual para links e botões).
+Hover: #FF7043 (um laranja mais suave para interações).

@@ -1,0 +1,17 @@
+footer {
+    border-top: 5px solid #1F2937;
+    display: flex;
+    justify-content: center;
+}
+.colunafooter {
+    justify-items: center;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    height: 40px;
+    position: sticky;
+    bottom: 0%;
+}
+.colunafooter h5{
+    padding: 3px;
+}

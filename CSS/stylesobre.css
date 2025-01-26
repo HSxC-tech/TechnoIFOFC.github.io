@@ -1,0 +1,128 @@
+.title-Sobre {
+    margin: 10px;
+    padding: 10px;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+
+    /* Gradiente inicial */
+    background: linear-gradient(90deg, #4CAF50, #2196F3, #FF7043, #4CAF50,  #2196F3);
+    background-size: 200% 200%; /* Expande o gradiente para animação */
+    -webkit-background-clip: text; /* Compatibilidade com navegadores WebKit */
+    background-clip: text;
+    color: transparent; /* Necessário para exibir o gradiente */
+
+    /* Animação */
+    animation: moveGradient 6s linear infinite;
+}
+
+/* Animação do gradiente */
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%; /* Posição inicial */
+    }
+    100% {
+        background-position: 100% 50%; /* Movimento até a direita */
+    }
+}
+.text-Sobre {
+    margin: auto;
+    max-width: 1600px;
+}
+.text-Sobre p {
+    text-align:justify;
+    margin: 10px;
+    font-size: 1.2em;
+}
+hr {
+    margin: 100px 20px;
+    color: #FF5722;
+    border: 2px solid;
+}
+.title-equipe{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.title-center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 2.0em;
+}
+.title-equipe img {
+    border-radius: 30%;
+    margin: auto;
+    width: 100%;
+    filter: blur(5px);
+    filter:brightness(50%);
+    z-index: -2;
+}
+/* Contêiner dos cards */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+/* Card individual */
+.team-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, width 0.5s ease, height 0.5s ease;
+}
+.team-card:hover {
+    transform: translateY(-5px);
+    width: calc(100% * 1.1);
+    height: calc(100% * 1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.753);
+}
+/* Foto dos membros */
+.team-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+/* Nome dos membros */
+.team-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* Cargo dos membros */
+.team-role {
+    font-size: 1em;
+    color: #8D99AE;
+}
+.citacao {
+    font-size: 1.5em;
+    text-align:justify;
+    border-left: 6px solid #FF5722;
+    padding: 10px 15px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    box-shadow: #00000071 5px 5px 5px 5px;
+}
+.citacao p, h3 {
+    padding: 10px;
+    color: #000000;
+    font-style: italic;
+}
+.resto-citacao{
+    margin-left: 40%;
+}
+.resto-citacao p {
+    color: #0000007a;
+    font-size: 0.8em;
+}
